@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title></title>
+</head>
+<body style="background-image: url('img/library-5612441_1920.jpg'); background-size: cover; background-position: center;">
+  <header>
+    <nav id="nav_A">
+      <ul>
+        <li><a href="index.html">Boletim.App <img src="img/bacharel.png" id="logo"></a></li>
+        <li><a href="sobre.html" id="sobrenos">Sobre nós</a></li>
+      </ul>
+    </nav>
+  </header>
+
+    <div class="bloco_form">
+          <h1> Vamos criar um Boletim!</h1>
+          <h2>Insira as informações de 5 Alunos logo abaixo para o Boletim ser gerado!</h2>
+        <div class="forms">
+          <label for="nome">Nome do aluno:</label>
+          <input type="text" id="nome">
+        </div>
+        <div class="forms">
+          <label for="nota1">Nota do 1º Bimestre: </label> 
+          <input type="number" id="nota1" min="1" max="100" placeholder="de 0 á 100" oninput="limitarValor(this)">
+        </div>  
+        <div class="forms">
+          <label for="nota2">Nota do 2º Bimestre:</label> 
+          <input type="number" id="nota2" min="1" max="100" placeholder="de 0 á 100" oninput="limitarValor(this)">
+        </div>
+        <div class="forms">
+          <label for="nota3">Nota do 3º Bimestre: </label>
+          <input type="number" id="nota3" min="1" max="100" placeholder="de 0 á 100" oninput="limitarValor(this)">
+        </div>
+        <div class="forms">
+          <label for="nota4">Nota do 4º Bimestre: </label>
+          <input type="number" id="nota4" min="1" max="100" placeholder="de 0 á 100" oninput="limitarValor(this)">
+        </div>
+
+        <div id="btn">
+          <button id="Registrar">Registrar</button>
+
+          <button onclick="window.location.reload()">Limpar Boletim</button>
+          <!-- este botao recarrega a pagina e consequentemente limpa tudo -->
+        </div>
+    </div>
+
+    <div id="Tabelaresult">
+      <table>
+          <tr>
+             <th id="rnome">Nome</th>
+             <th>1º Bimestre</th>
+             <th>2º Bimestre</th>
+             <th>3º Bimestre</th>
+             <th>4º Bimestre</th>
+             <th>Média final</th>
+             <th id="situacao">Situação</th>
+          </tr>
+          
+      </table>
+  </div>
+  
+  <div id="resultadogeral">
+    <h3>Resultado Geral:</h3>
+    <P>Média geral da turma: <br></P>
+    <p id="MédiaTurma"></p>
+    <p>Alunos que obtiveram nota final <br>abaixo da média geral da turma:<br>
+    </p>
+    <p id="AlunosmédiaAbaixo"></p>
+  </div>
+  
+  <script src="js/script.js"></script>
+</body>
+</html>

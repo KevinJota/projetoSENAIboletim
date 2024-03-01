@@ -1,0 +1,158 @@
+body{
+    font-family: sans-serif;
+    color: aliceblue;
+    margin: 0;
+    padding: 0;
+
+}
+.bloco_form h1{
+    font-size: 28px;
+    user-select: none; /*isso aqui impede o usuario de selecionar o texto*/
+}
+.bloco_form h2{
+    font-size: 20px;
+    user-select: none;
+}
+.bloco_form {
+    background: transparent; 
+    backdrop-filter: blur(6px); /*isto deixa o fundo do background desfocado*/
+    text-align: center;
+    width: 700px;
+    max-width: 100%;
+    padding: 40px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border: 1px solid;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+}
+.forms{
+    margin-top: 20px;
+    display: block;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+label{
+    width: 150px;
+    display: inline-block;
+    text-align: center;
+    user-select: none;
+}
+input{
+    width: 100px;
+    border: 3px outset teal;
+    border-radius: 5px;
+    box-shadow: 3px 3px navy;
+}
+
+#btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button{
+    margin: 20px;
+    background-color: red;
+    color: aliceblue;
+    width: 150px;
+    height: 40px;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+button:hover{
+    background-color: black;
+}
+
+#Tabelaresult{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+table ,th ,td, tr{
+    border: 1px solid white;
+    
+}
+
+td,th{
+    font-size: 16px;
+    width: 100px;
+    height: 50px;
+}
+
+table{
+    margin-top: 10px;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    background-color: black ; 
+    backdrop-filter: blur(5px); /*isto deixa o fundo do background desfocado*/
+    
+}
+
+#resultadogeral{
+    background-color: black;
+    opacity: 0.9;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 40px;
+    width: 350px;
+    border-radius: 10px;
+    border: 1px solid white;
+}
+
+#resultadogeral h3{
+    padding: 20px;
+}
+
+/* responsividade da pagina aqui : */
+
+@media(max-width: 767px){
+
+    .bloco_form{
+        width: 440px;
+    }
+
+    button{
+        width: 125px;
+        font-size: 14px;
+    }
+
+    td,th{
+        width: 60px;
+        height: 40px;
+        font-size: 13px;
+    }
+    
+}
+
+
+@media(min-width: 768px) and (max-width: 1023px){
+
+    .bloco_form{
+        width: 550px;
+    }
+
+    
+    button{
+        width: 130px;
+        font-size: 16px;
+    }
+
+    td,th{
+        width: 80px;
+        height: 45px;
+        font-size: 15px;
+    }
+}
